@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.model.model.ProductForSale;
+
 public class Store {
     public static void main(String[] args) {
 

@@ -1,7 +1,7 @@
 import org.example.model.Bread;
 import org.example.model.Chocolate;
 import org.example.model.Coke;
-import org.example.model.ProductForSale;
+import org.example.model.model.ProductForSale;
 import org.example.rpg.Monster;
 import org.example.rpg.Troll;
 import org.junit.jupiter.api.BeforeEach;
