@@ -3,7 +3,7 @@ package org.example.model;
 public class Chocolate extends ProductForSale{
     private String color;
     private Boolean hasSugar;
-    public Chocolate(String type, double price, String description){
+    public Chocolate(String type, double price,String description){
         super(type,price,description);
     }
     public Chocolate(String type, double price, String description,String color,boolean hasSugar){
