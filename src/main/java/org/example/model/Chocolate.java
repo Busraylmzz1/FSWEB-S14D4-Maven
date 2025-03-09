@@ -1,31 +1,31 @@
 package org.example.model;
 
 public class Chocolate extends ProductForSale{
-
+    private String color;
     private boolean hasSugar;
-    public Chocolate(String type, double price,String description){
-        super(type,price,description);
-    }
-    public Chocolate(String type, double price, String description, boolean hasSugar){
+    public Chocolate(String type,double price, String description) {
+        super(type, price, description);
 
-        super(type,price,description);
-
-        this.hasSugar=hasSugar;
     }
 
 
-
+    public Chocolate(String type,double price, String description, boolean hasSugar,String color) {
+        this(type, price, description);
+        this.hasSugar = hasSugar;
+        this.color=color;
+    }
 
     @Override
     public void showDetails() {
-        System.out.println(super.toString()+this);
-
+        System.out.println(super.toString() + this);
     }
 
     @Override
     public String toString() {
         return "Chocolate{" +
-                "hasSugar=" + hasSugar +
+                "color='" + color + '\'' +
+                ", hasSugar=" + hasSugar +
+                ", type='" + type + '\'' +
                 '}';
     }
 }
