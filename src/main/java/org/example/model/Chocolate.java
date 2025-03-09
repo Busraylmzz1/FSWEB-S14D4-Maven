@@ -1,17 +1,19 @@
 package org.example.model;
 
 public class Chocolate extends ProductForSale{
-    private String color;
-    private Boolean hasSugar;
+
+    private boolean hasSugar;
     public Chocolate(String type, double price,String description){
         super(type,price,description);
     }
-    public Chocolate(String type, double price, String description,String color,boolean hasSugar){
+    public Chocolate(String type, double price, String description, boolean hasSugar){
 
         super(type,price,description);
-        this.color=color;
+
         this.hasSugar=hasSugar;
     }
+
+
 
 
     @Override
@@ -23,8 +25,7 @@ public class Chocolate extends ProductForSale{
     @Override
     public String toString() {
         return "Chocolate{" +
-                "color='" + color + '\'' +
-                ", hasSugar=" + hasSugar +
+                "hasSugar=" + hasSugar +
                 '}';
     }
 }
